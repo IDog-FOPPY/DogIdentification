@@ -38,7 +38,7 @@ from typing import List, Dict, Any, Optional, Tuple, Callable
 
 app = FastAPI()
 
-detect_model = torch.hub.load('ultralytics/yolov5', 'custom', path='/Users/kimgyuri/foppy/DogIdentification/noseDetection/train/result/weights/best.pt', force_reload=True) 
+detect_model = torch.hub.load('ultralytics/yolov5', 'custom', path='./noseDetection/train/result/weights/best.pt', force_reload=True) 
 feature_model = EfficientNetB4(weights='imagenet', include_top=False)
 
 @app.post("/noseDedetect")
