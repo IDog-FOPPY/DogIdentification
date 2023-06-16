@@ -1,0 +1,4 @@
+DogDataset
+noseDetection/runs/*
+*.pyc
+.DS_Store
