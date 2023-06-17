@@ -1,21 +1,13 @@
 import torch
-import torchvision.transforms as T
 from torch.utils.data import DataLoader
 import numpy as np
 import cv2
 from PIL import Image
 import matplotlib.pyplot as plt
 import faiss
-from natsort import natsorted
 
-import argparse
 import os
-from pprint import pformat
-import logging
-import time
-from multiprocessing import cpu_count
-import sys
-from typing import List, Dict, Any, Optional, Tuple, Callable
+from typing import List, Optional, Tuple, Callable
 
 class Dataset(torch.utils.data.Dataset):
     def __init__(self, images_list: list, transform: Callable, labeled_folders: bool = False):

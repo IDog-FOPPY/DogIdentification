@@ -1,12 +1,10 @@
-from fastapi import FastAPI, UploadFile, File
-from fastapi.responses import JSONResponse
+from fastapi import FastAPI, File
 from PIL import Image
 import io
 import torch
 import json
 import base64
 
-from model import Resnet50
 from function import *
 
 from tensorflow.keras.applications.efficientnet import EfficientNetB4, preprocess_input
@@ -15,25 +13,11 @@ from scipy.spatial import distance
 import numpy as np
 
 import torch
-import torchvision.transforms as T
-from torch.utils.data import DataLoader
 import numpy as np
-import cv2
 from PIL import Image
-import matplotlib.pyplot as plt
-import faiss
-from natsort import natsorted
 
-import argparse
 import pandas as pd
 import os
-from pprint import pformat
-import logging
-import time
-from multiprocessing import cpu_count
-import sys
-from typing import List, Dict, Any, Optional, Tuple, Callable
-
 
 
 app = FastAPI()
@@ -41,7 +25,7 @@ app = FastAPI()
 detect_model = torch.hub.load('ultralytics/yolov5', 'custom', path='./noseDetection/train/result/weights/best.pt', force_reload=True) 
 feature_model = EfficientNetB4(weights='imagenet', include_top=False)
 
-@app.post("/noseDedetect")
+@app.post("/noseDetect")
 async def noseDedetect(file: bytes = File(...)):
     input_image = Image.open(io.BytesIO(file)).convert("RGB")
     results = detect_model(input_image)
@@ -108,7 +92,6 @@ async def dogIdent(file: bytes = File(...)):
             features1 = feature_model.predict(x1)
             features1 = features1.flatten()
 
-
             # 비교할 이미지가 있는 디렉토리 경로
             image_dir = "/Users/kimgyuri/foppy/DogIdentification/noseDetection/runs/detect/exp2/crops/nose"
             
@@ -136,18 +119,15 @@ async def dogIdent(file: bytes = File(...)):
                 # 결과 저장
                 result_df = result_df.append({'filename': filename, 'similarity': similarity}, ignore_index=True)
 
-            # print(result_df[:10])
-            # assuming df is your DataFrame and "path" is the directory containing the files
             def adjust_filename(filename):
                 name, num = filename.rsplit('_', 1)
-                num = num.split('.', 1)[0] # split the extension from num and take the first part
+                num = num.split('.', 1)[0]
                 if len(num) > 2:
                     num = num[:2]
                 return f"{name}_{num}.jpg"
 
             result_df['filename'] = result_df['filename'].apply(adjust_filename)
 
-            # 결과를 CSV 파일로 저장
             result_df = result_df.sort_values(by='similarity', ascending=False)
             # Get top 3 results
             top_3 = result_df.head(3)
