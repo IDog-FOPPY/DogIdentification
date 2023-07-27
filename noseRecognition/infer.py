@@ -5,8 +5,8 @@ from tensorflow.keras.preprocessing import image
 from scipy.spatial import distance
 import numpy as np
 
-from DogIdentification.model import Resnet50
-from DogIdentification.function import *
+from model import Resnet50
+from function import *
 
 import torch
 import torchvision.transforms as T
