@@ -1,4 +1,19 @@
 # DogIdentification
+## 중간 발표 자료
+![23캡스톤2_가3_중간발표자료-Foppy_page-0016](https://github.com/IDog-FOPPY/DogIdentification/assets/97080154/62fa7190-6a21-406e-a709-c1f934bc642c)
+![23캡스톤2_가3_중간발표자료-Foppy_page-0017](https://github.com/IDog-FOPPY/DogIdentification/assets/97080154/54c29b41-8464-4245-ad7c-aef6d2b04522)
+![23캡스톤2_가3_중간발표자료-Foppy_page-0018](https://github.com/IDog-FOPPY/DogIdentification/assets/97080154/7dd352e0-e7f0-4522-8bce-5e841706855a)
+![23캡스톤2_가3_중간발표자료-Foppy_page-0019](https://github.com/IDog-FOPPY/DogIdentification/assets/97080154/44f32f77-1366-4917-996c-aba2a6205fc6)
+![23캡스톤2_가3_중간발표자료-Foppy_page-0020](https://github.com/IDog-FOPPY/DogIdentification/assets/97080154/54eb9452-e3e6-45f6-9c60-8aac9ec5c90d)
+![23캡스톤2_가3_중간발표자료-Foppy_page-0021](https://github.com/IDog-FOPPY/DogIdentification/assets/97080154/7f6fc04d-37de-4ef6-a25a-d500c52b0c54)
+![23캡스톤2_가3_중간발표자료-Foppy_page-0022](https://github.com/IDog-FOPPY/DogIdentification/assets/97080154/06d3dd9f-1f75-441a-905b-70905b157faa)
+![23캡스톤2_가3_중간발표자료-Foppy_page-0023](https://github.com/IDog-FOPPY/DogIdentification/assets/97080154/0d7c2d99-6887-4e04-a25b-3ade58a373ce)
+![23캡스톤2_가3_중간발표자료-Foppy_page-0024](https://github.com/IDog-FOPPY/DogIdentification/assets/97080154/623e2ea5-88cd-48bf-a951-5e31fb523f91)
+![23캡스톤2_가3_중간발표자료-Foppy_page-0025](https://github.com/IDog-FOPPY/DogIdentification/assets/97080154/f181d3cb-37d0-4a38-a9ec-55dd1d7a645f)
+![23캡스톤2_가3_중간발표자료-Foppy_page-0026](https://github.com/IDog-FOPPY/DogIdentification/assets/97080154/9c3348ba-5e03-428f-b557-26e34f853b5b)
+![23캡스톤2_가3_중간발표자료-Foppy_page-0027](https://github.com/IDog-FOPPY/DogIdentification/assets/97080154/81ad6ece-48db-43b7-b35f-c62ba5366c2b)
+
+## 최종 발표 자료
 ![23캡스톤2_가3_최종발표-Foppy-1_page-0010](https://github.com/IDog-FOPPY/DogIdentification/assets/97080154/56190709-bf8c-43b8-9936-1a875d560989)
 ![23캡스톤2_가3_최종발표-Foppy-1_page-0011](https://github.com/IDog-FOPPY/DogIdentification/assets/97080154/ab67a85b-fc42-43a6-ad35-df88ddceb40b)
 ![23캡스톤2_가3_최종발표-Foppy-1_page-0012](https://github.com/IDog-FOPPY/DogIdentification/assets/97080154/48347840-5bcc-4a17-9e74-0c7bcbaf9f07)
